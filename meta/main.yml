@@ -29,7 +29,4 @@ galaxy_info:
 
 
 dependencies:
-  - role: ChristopherDavenport.universal-java
-    when: tomcat_use_java
-  - role: ChristopherDavenport.apache-portable-runtime
-    when: tomcat_use_apr
+   - role: ansible-role-java
