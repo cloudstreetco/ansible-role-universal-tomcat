@@ -62,7 +62,7 @@
       </Realm>
 
       <Host name="localhost"  appBase="webapps"
-            unpackWARs="true" autoDeploy="true">
+            unpackWARs="{{ tomcat_unpack_wars }}" autoDeploy="{{ tomcat_autodeploy }}">
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs"
                prefix="localhost_access_log." suffix=".txt"
                pattern="%h %l %u %t &quot;%r&quot; %s %b" />
